@@ -1,0 +1,128 @@
+import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClient,HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing-module';
+import { App } from './app';
+import { About } from './about/about';
+import { Contact } from './contact/contact';
+import { Ex3 } from './ex3/ex3';
+import { Mybinding } from './mybinding/mybinding';
+import { Ptb1 } from './ptb1/ptb1';
+import { Tdgpa } from './tdgpa/tdgpa';
+import { Ptb2 } from './ptb2/ptb2';
+import { Learndirective } from './learndirective/learndirective';
+import { Listproduct1 } from './listproduct1/listproduct1';
+import { Listproduct2 } from './listproduct2/listproduct2';
+import { Customer } from './customer/customer';
+import { Listproduct3 } from './listproduct3/listproduct3';
+import { Ex18 } from './ex18/ex18';
+import { Ex10 } from './ex10/ex10';
+import { Pagenotfound } from './pagenotfound/pagenotfound';
+import { Listcustomer } from './listcustomer/listcustomer';
+import { Customerdetail } from './customerdetail/customerdetail';
+import { Listcustomerservice } from './listcustomerservice/listcustomerservice';
+import { CustomerHtte } from './customer-htte/customer-htte';
+import { Ex14 } from './ex14/ex14';
+import { Ex13 } from './ex13/ex13';
+import { Ex13Detail } from './ex13-detail/ex13-detail';
+import { Ex19 } from './ex19/ex19';
+import { Ex19List } from './ex19-list/ex19-list';
+import { Ex19Service } from './ex19-service/ex19-service';
+import { Form } from './form/form';
+import { ReactiveForm } from './reactive-form/reactive-form';
+import { Ex26 } from './ex26/ex26';
+import { FakeProductComponent } from './fake-product-component/fake-product-component';
+import { Ex27 } from './ex27/ex27';
+import { Books } from './books/books';
+import { BookDetailCoConponentmponent } from './book-detail-co-conponentmponent/book-detail-co-conponentmponent';
+import { BookNew } from './book-new/book-new';
+import { BookUpdate } from './book-update/book-update';
+import { BookDelete } from './book-delete/book-delete';
+import { Fashion } from './fashion/fashion';
+import { FashionDetail } from './fashion-detail/fashion-detail';
+import { FileUpload } from './file-upload/file-upload';
+import { BookList } from './book-list/book-list';
+import { BookDetail } from './book-detail/book-detail';
+import { BookEdit } from './book-edit/book-edit';
+import { Login } from './login/login';
+import { FashionNew } from './fashion-new/fashion-new';
+import { FashionUpdate } from './fashion-update/fashion-update';
+import { FashionDelete } from './fashion-delete/fashion-delete';
+import { Fashionadmin } from './fashionadmin/fashionadmin';
+import { FashionList } from './fashion-list/fashion-list';
+import { FashionEdit } from './fashion-edit/fashion-edit';
+import { Fashiondetail58 } from './fashiondetail58/fashiondetail58';
+import { Ex64productlist } from './ex64productlist/ex64productlist';
+import { Ex64cart } from './ex64cart/ex64cart';
+
+
+@NgModule({
+  declarations: [
+    App,
+    About,
+    Contact,
+    Ex3,
+    Mybinding,
+    Ptb1,
+    Tdgpa,
+    Ptb2,
+    Learndirective,
+    Listproduct1,
+    Listproduct2,
+    Customer,
+    Listproduct3,
+    Ex18,
+    Ex10,
+    Pagenotfound,
+    Listcustomer,
+    Customerdetail,
+    Listcustomerservice,
+    CustomerHtte,
+    Ex14,
+    Ex13,
+    Ex13Detail,
+    Ex19,
+    Ex19List,
+    Ex19Service,
+    Form,
+    ReactiveForm,
+    Ex26,
+    FakeProductComponent,
+    Ex27,
+    Books,
+    BookDetailCoConponentmponent,
+    BookNew,
+    BookUpdate,
+    BookDelete,
+    Fashion,
+    FashionDetail,
+    FileUpload,
+    BookList,
+    BookDetail,
+    BookEdit,
+    Login,
+    FashionNew,
+    FashionUpdate,
+    FashionDelete,
+    Fashionadmin,
+    FashionList,
+    FashionEdit,
+    Fashiondetail58,
+    Ex64productlist,
+    Ex64cart,
+    
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+  ],
+  providers: [
+    provideBrowserGlobalErrorListeners(),
+  ],
+  bootstrap: [App]
+})
+export class AppModule { }

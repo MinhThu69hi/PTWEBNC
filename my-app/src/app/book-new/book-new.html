@@ -1,0 +1,35 @@
+<h2>Thêm sách mới</h2>
+<p>{{errMessage}}</p>
+
+<table>
+  <tr>
+    <td>Book Id:</td>
+    <td><input type="text" [(ngModel)]="book.BookId" name="BookId" placeholder="Nhập Book Id"/></td>
+  </tr>
+  <tr>
+    <td>Book Name:</td>
+    <td><input type="text" [(ngModel)]="book.BookName" name="BookName" placeholder="Nhập tên sách"/></td>
+  </tr>
+  <tr>
+    <td>Author:</td>
+    <td><input type="text" [(ngModel)]="book.Author" name="Author" placeholder="Nhập tác giả"/></td>
+  </tr>
+  <tr>
+    <td>Category:</td>
+    <td><input type="text" [(ngModel)]="book.Category" name="Category" placeholder="Nhập thể loại"/></td>
+  </tr>
+  <tr>
+    <td>Price:</td>
+    <td><input type="number" [(ngModel)]="book.Price" name="Price" placeholder="Nhập giá"/></td>
+  </tr>
+  <tr>
+    <td>Image:</td>
+    <td><input type="file" (change)="onFileSelected($event)" name="image"/></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <button (click)="postBook()">Submit</button>
+      <button (click)="goBack()">Cancel</button>
+    </td>
+  </tr>
+</table>
